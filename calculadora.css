@@ -1,0 +1,35 @@
+/*Aplicando estilo al elemento body*/
+body{
+    background-color: black;
+}
+
+/*Aplicamos estilos para la tabla, celdas y titulos de la tabla*/
+table, caption, th, td {
+    color: white;
+    border: 5px solid white;
+    border-collapse: collapse;
+    font-size: 25px;
+}
+
+/*Aplicamos estilos a los botones*/
+button {
+    width: 75px;
+    height: 75px;
+    font-size: 25px;
+}
+
+/*Aplicamos estilos con selector de id*/
+#pantalla {
+    width: 335px;
+    height: 70px;
+    font-size: 35px;
+    text-align: right;
+}
+
+/*Aplicamos estilos al contenedor*/
+#contenedor{
+
+    width: 335px;
+    margin: 10% auto;
+
+}
