@@ -6,6 +6,9 @@
   </head>
 <!---- Enlazando la hoja de estilos -->
   <link rel="stylesheet" href ="calculadora.css">
+
+<!---- Enlazando el script de programación calculadora.js a es ta página html -->
+<script src = "calculadora.js"></script>
   <body>
     <div id="contenedor">
 
@@ -16,40 +19,46 @@
                 <input = type = "text" id = "pantalla" readonly="readonly">
                 
             </th>
+
             <tr>
-                <td><button>C</button></td>
-                <td><button>^</button></td>
-                <td><button>%</button></td>
-                <td><button>/</button></td>
+                <td><button onclick = "limpiarPantalla()">C</button></td>
+                <td><button onclick = "operacion(5)">^</button></td>
+                <td><button onclick = "porcentaje()">%</button></td>
+                <td><button onclick = "operacion(4)">/</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick = "marcarBoton(7)">7</button></td>
+                <td><button onclick = "marcarBoton(8)">8</button></td>
+                <td><button onclick = "marcarBoton(9)">9</button></td>
+                <td><button onclick = "operacion(3)">X</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick = "marcarBoton(4)">4</button></td>
+                <td><button onclick = "marcarBoton(5)">5</button></td>
+                <td><button onclick = "marcarBoton(6)">6</button></td>
+                <td><button onclick = "operacion(2)">-</button></td>
             </tr>
             <tr>
-                <td><button>7</button></td>
-                <td><button>8</button></td>
-                <td><button>9</button></td>
-                <td><button>X</button></td>
+                <td><button onclick = "marcarBoton(1)">1</button></td>
+                <td><button onclick = "marcarBoton(2)">2</button></td>
+                <td><button onclick = "marcarBoton(3)">3</button></td>
+                <td><button onclick = "operacion(1)">+</button></td>
             </tr>
+
             <tr>
-                <td><button>4</button></td>
-                <td><button>5</button></td>
-                <td><button>6</button></td>
-                <td><button>-</button></td>
-            </tr>
-            <tr>
-                <td><button>1</button></td>
-                <td><button>2</button></td>
-                <td><button>3</button></td>
-                <td><button>+</button></td>
-            </tr>
-            <tr>
-                <td><button>+/-</button></td>
-                <td><button>0</button></td>
-                <td><button>.</button></td>
-                <td><button>=</button></td>
+                <td><button onclick = "cambiarSigno()">+/-</button></td>
+                <td><button onclick = "marcarBoton(0)">0</button></td>
+                <td><button onclick = "marcarBoton('.')">.</button></td>
+                <td><button onclick = "calcular()">=</button></td>
                 
             </tr>
+
         </table> 
 
     </div>
+
   </body>  
 
 </HTML>
